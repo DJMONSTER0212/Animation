@@ -1,0 +1,79 @@
+<html>
+<head>
+<style> 
+body{
+  background-color: black;
+  color: white;
+  text-shadow: 5px 0 red;
+  shado
+}
+#first {
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  /* background: red; */
+  transition:  transform 2s;
+}
+
+#first:hover {
+  /* width: 300px; */
+  /* height: 300px; */
+  transform: rotate(360deg);
+}
+.circles{
+  position: sticky;
+  top: 300px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50px;
+}
+#third{
+  background-color: #5800FF;
+  margin-left: 100px;
+  /* box-shadow: 5px 5px whitesmoke; */
+}
+#second{
+  background-color: #3EC70B;
+  /* box-shadow: 5px 5px whitesmoke; */
+}
+@keyframes changewidth {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#first{
+  animation-duration: 1.5s;
+  animation-name: changewidth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+</style>
+</head>
+<body>
+
+<h1>Made By DJ🎮</h1>
+
+
+<div id="first">
+   <div class="circles" id="second">
+
+   </div>
+   <div class="circles" id="third">
+
+   </div>
+</div>
+<script>
+    var = 100
+    setInterval(() => {
+        let temp= document.querySelector('#third');
+        temp.style.marginLeft = '400px'
+    }, 1000);
+</script>
+</body>
+</html>
